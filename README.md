@@ -1,5 +1,9 @@
 # dnd_project
 
+## Project setup
+
+Copy the `db/config.example.php` file to `db/config.php` and update the database credentials as needed.
+
 ## Reference links :
 
 [Duck pond DND website](https://duckponddnd.com/)
