@@ -15,8 +15,8 @@ CREATE TABLE `store_types`(
 CREATE TABLE `stores`(
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(255) NOT NULL,
-    `store_type_id` INT NOT NULL,
-    `settlement_id` INT NOT NULL
+    `store_type_id` INT UNSIGNED NOT NULL,
+    `settlement_id` INT UNSIGNED NOT NULL
 );
 ALTER TABLE
     `stores` ADD CONSTRAINT `stores_settlement_id_foreign` FOREIGN KEY(`settlement_id`) REFERENCES `settlements`(`id`);
