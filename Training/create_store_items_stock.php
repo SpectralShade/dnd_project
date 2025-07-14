@@ -44,7 +44,8 @@ foreach ($item_types_Array as $item_type) {
     
     if ($dice_roll_quantity<= $appear_chance_item_type) {
         echo ("Quantity added");
-        $sql = "INSERT INTO `store_item_stock` (`id`, `store_id`, `item_type_id`, `quantity`) VALUES ('$item_type', '$store_type_id_stores', '$dice_roll_quantity')";
+        $store_stock_id = ($item_type . $stores);
+        $sql = "INSERT INTO `store_item_stock` (`id`, `store_id`, `item_type_id`, `quantity`) VALUES (NULL, '$store_stock_id', '$store_type_id_stores', '$dice_roll_quantity')";
     }
     else {
         echo ("no quantity added");
