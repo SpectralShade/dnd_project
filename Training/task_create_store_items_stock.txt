@@ -1,0 +1,34 @@
+Now that we have created the stores in the settlements, we want to create the items stock for each store.
+We will have a list of item types, each having a name, a price and a percentage chance to appear in the store's stock.
+The items stock for each store will then be created based on the following rules:
+    - The items will be randomly selected based on their percentage chance to appear.
+    - The quantity of the item in stock will be randomly determined between 1 and 5.
+
+Detailed Steps:
+
+In PhpMyAdmin:
+1. Manually create a database table named item_types with the following columns:
+   - id (int, primary key, autoincrement)
+   - name (varcahr(255))
+   - price (int)
+   - appear_chance (int)
+2. Manually populate the item_types table with various items of your choice, their prices, and their appearance chances.
+3. Manually create a database table named store_items_stock with the following columns:
+   - id (int, primary key, autoincrement)
+   - store_id (int, foreign key referencing stores table(optional))
+   - item_type_id (int, foreign key referencing item_types table(optional))
+   - quantity (int)
+
+In VSCode, in PHP:
+1. Create a new PHP file named create_store_items_stock.php
+2. Include the database connection file at the top of create_store_items_stock.php
+3. Fetch all stores from the database and save them in a variable as an associative array (in the same way as we previsously fetched the settlements or store types).
+4. Do the same for the item_types.
+5. Implement the logic to create the items stock for each store:
+   - Loop through each store.
+   - For each store, loop through each item_type.
+   - For each item_type, use the appear_chance to determine if the item should be added to the store's stock, using a random number generator to compare against the appear_chance.
+   - If the item should be added, generate a random quantity between 1 and 5, and insert the item into the store_items_stock table with the store_id, item_type_id, and quantity.
+
+Debugging. Add display messages with echo to indicate the progress of the code execution and the stock creation process (ex. display the name of the current store, the name of the current item, the random values rolled, if an item should be added or not, etc.). 
+Note: This should be done while coding the logic to ensure you can see the flow of the code and debug if necessary.
