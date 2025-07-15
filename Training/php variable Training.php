@@ -73,9 +73,9 @@ $item_price = 499.95;
 $item_quantity = 2;
 
 $item_price_total = $item_price * (1 + STEFFEN_TAX);  # Berechnet 18% Mehrwertsteuer auf das gesamtprodukt (1 (1 Produkt) + 18% Mehrwertsteuer)
-$item_price_total = round($item_price_total, 2) ;
+$item_price_total = round($item_price_total, 2);
 $total_price = $item_price_total * $item_quantity;
-$total_price = round($total_price, 2) ;
+$total_price = round($total_price, 2);
 
 # Stellt das Ergebnis als "Rechnung" in der Reihenfolge dar
 
