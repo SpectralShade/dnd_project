@@ -17,3 +17,12 @@ Copy the `db/config.example.php` file to `db/config.php` and update the database
 [Store generation rules](https://docs.google.com/document/d/1-W70ULk_hTl9NC5DzTYGbxwtglMBlZKzFIO8grAwCeo/)
 
 [Database structure diagram](https://drawsql.app/teams/shade-2/diagrams/duckpond)
+
+
+## PHP Language Reference links :
+
+[PHP Data Types](https://tutorials.ducatindia.com/php/php-basics)
+
+[PHP Operators](https://www.tutorialrepublic.com/php-tutorial/php-operators.php)
+
+[PHP Control flow](https://medium.com/@olivia.j.01101001/control-structures-in-php-conditional-statements-and-loops-8255be58c87f)
