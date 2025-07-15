@@ -33,10 +33,11 @@ foreach ($settlements_array as $settlement) { #Loop on the settlements_array - g
         $dice_roll = rand(1, 100);
         echo ("dice_roll_number " . $dice_roll . '<br>');
         # if roll dice is lower or equal then $chance_appear_in_settlement -> use that store type
+        
         if ($dice_roll <= $chance_appear_in_settlement) {
             echo ("this store should appear <br>");
             $storename = ($name_settlement . $name_storetype);
-            $sql = "INSERT INTO `stores` (`name`, `store_type_id`, `settlement_id`) VALUES ('$storename', '$id_store_type', '$id_settlement')"; 
+            $sql = "INSERT INTO `stores` (`name`, `store_type_id`, `settlement_id`) VALUES (NULL,'$storename', '$id_store_type', '$id_settlement')"; 
             $result = $db->query($sql);   
         }
         else {
