@@ -80,7 +80,7 @@ $total_price = round($total_price, 2);
 # Stellt das Ergebnis als "Rechnung" in der Reihenfolge dar
 
 echo "<br> Asus rog strix g17 $item_name <br>";
-echo "Preis pro stk: $item_price € <br>" ;
+echo "Preis pro stk: $item_price € <br>";
 echo "Preis inkl Mehrwertsteuer $item_price_total € <br>"; 
 echo "Stückzahl $item_quantity <br>";
 echo "Gesamtpreis:  $total_price € <br>"; 
