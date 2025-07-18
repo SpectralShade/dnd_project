@@ -39,13 +39,16 @@ foreach ($item_types_Array as $item_type) {
     echo ("appear chance " . $appear_chance_item_type . '<br>'); 
     $dice_roll = rand(0, 100);
     echo ("dice roll number " . $dice_roll .  '<br>');
-    $dice_roll_quantity = rand(0, 5);
+}    
+    
+    $dice_roll_quantity =rand(0, 5);
     echo ("dice roll number quantity " . $dice_roll_quantity .  '<br>');      
     
-    if ($dice_roll_quantity<= $appear_chance_item_type) {
-        echo ("Quantity added");
-        $store_stock_id = ($item_type . $stores);
-        $sql = "INSERT INTO `store_item_stock` (`id`, `store_id`, `item_type_id`, `quantity`) VALUES (NULL, '$store_stock_id', '$store_type_id_stores', '$dice_roll_quantity')";
+    if ($dice_roll<= $appear_chance_item_type) {
+        echo ("item addet");
+        if ($dice_roll_quantity) {
+            $store_stock_id = ($item_type . $stores);
+            $sql = "INSERT INTO `store_item_stock` (`id`, `store_id`, `item_type_id`, `quantity`) VALUES (NULL, '$store_stock_id', '$store_type_id_stores', '$dice_roll_quantity')";
     }
     else {
         echo ("no quantity added");
