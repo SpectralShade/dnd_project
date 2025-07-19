@@ -74,7 +74,7 @@ echo "<br>";
     if ($a < $b)  # if $a is bigger as $b print this - else --
     echo "a ist kleiner als B";
     else 
-    echo "B ist größer A";
+    echo "B ist größer als A";
 
     if ($a % 2 == 0) { #if a is divisible by 2 (if no remainder - modulus) 
         echo "<br> A ist eine gerade zahl";
