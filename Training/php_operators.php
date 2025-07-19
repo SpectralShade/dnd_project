@@ -72,7 +72,7 @@ var_dump ($a == $b); #checks if $a and $b has the same value (bigger - equal - s
 echo "<br>";
 # its not equal so -> bool(false) -> if its equal $a and $b both has 5 (for example) = bool(true)
 
-    if ($a < $b)  # if $a is bigger as $b print this - else --
+    if ($a < $b)  # if $a is smaller as $b print this - else --
     echo "a ist kleiner als B";
     else 
     echo "B ist größer als A";
