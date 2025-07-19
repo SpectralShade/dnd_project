@@ -99,7 +99,7 @@ echo ($str1 . $str2);
 
 #Bonus: Spaceship operator
 
-    if ($b % 2 == 0 and $a % 2 == 0) { #wenn beide bedingungen erfüllt sind 
+    if ($b % 2 == 0 and $a % 2 == 0) { #if both conditions are met
         echo "<br> beide zahlen sind gerade";
     }    
         else {
