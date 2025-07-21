@@ -52,21 +52,27 @@ $b = 4;
 $a+= $b;
 echo $a;
 
+$a = 15;
 $a-= $b;
 echo "<br>$a";
 
+$a = 15;
 $a*= $b;
 echo "<br>$a";
 
+$a = 15;
 $a/= $b;
 echo "<br>$a";
 
+$a = 15;
 $a%= $b;
 echo "<br>$a";
 
+$a = 15;
 $a += 5;
 echo  "<br>$a";
 
+$a = 15;
 echo "<br>";
 var_dump ($a == $b); #checks if $a and $b has the same value (bigger - equal - smaller)  
 echo "<br>";
@@ -77,13 +83,13 @@ echo "<br>";
     else 
     echo "B ist größer als A";
 
-    if ($a % 2 == 0) { #if a is divisible by 2 (if no remainder - modulus) 
+    if ($a%2==0) { #if a is divisible by 2 (if no remainder - modulus) 
         echo "<br> A ist eine gerade zahl";
     }    else {
         echo "<br> A ist eine ungerade zahl";
     } 
 
-    if ($b % 2 == 0) {
+    if ($b%2 == 0){
         echo "<br> B ist eine gerade Zahl";
     }    else {
         echo "<br> B ist keine gerade Zahl"; 
@@ -99,7 +105,7 @@ echo ($str1 . $str2);
 
 #Bonus: Spaceship operator
 
-    if ($b % 2 == 0 and $a % 2 == 0) { #if both conditions are met
+    if ($b%2==0 and $a%2==0) { #if both conditions are met
         echo "<br> beide zahlen sind gerade";
     }    
         else {
