@@ -98,8 +98,8 @@ foreach ($students as $name => $score) {
 $student_count = count($students);
 $total_score_of_all_students = 0;
 
-foreach ($students as $name  => $total_Score) {
-    $total_score_of_all_students += $total_Score;
+foreach ($students as $name  => $student_score) {
+    $total_score_of_all_students += $student_score;
 }
 
 $average_score_of_all_students = $total_score_of_all_students / $student_count;
