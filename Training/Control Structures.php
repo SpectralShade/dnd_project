@@ -111,7 +111,7 @@ $average_score_of_all_students = $total_score_of_all_students / $student_count;
     } elseif ($average_score_of_all_students >= 70) {
         echo "<br>Klasse hat eine befriedigende Leistung";   
     } else {
-        echo "<br>Klasse sollte sich verbessern.";
+        echo "<br> Die Klasse sollte sich verbessern.";
     } 
     
         
