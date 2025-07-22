@@ -1,0 +1,9 @@
+<?php
+
+include_once ("../db/db_connection.php");
+
+#Task
+#Create an array with 5 different fruits, for example: Apple, Banana, Cherry, Date, Elderberry.
+#Loop through the array and print each fruit on a new line (use echo and "\n").
+#At the end, print how many fruits are in the array.
+#(Optional) If the fruit “Cherry” is in the array, highlight it by printing it as **Cherry** or in uppercase.
