@@ -97,34 +97,4 @@ for ($zahlen2 = 0; $zahlen2 <10; $zahlen2 +=1) {
 
 
 
-#7. Bonus (not finished)
 
-$sum_per_person = [];
-$names = ['Alice', 'Bob', 'Charlie', 'Dave', 'Eve', 'Frank', 'Grace', 'Hank', 'Ivy', 'Jack'];
-
-for ($i = 0; $i <10; $i +=1) {
-    $sum_per_person[$names[$i]] = [rand(0, 100), rand(0, 100), rand(0, 100)];
-}
-
-if (count($sum_per_person) > 1) {
-    reset($sum_per_person);
-    $lowest_name = key($sum_per_person);
-    $lowest_sum = array_sum(current($sum_per_person));
-    end($sum_per_person);
-    $highest_name = key($sum_per_person);
-    $highest_sum = array_sum(current($sum_per_person));
-}
-
-echo "<br>the lowest value of all 3 numbers are from $lowest_name with a value of $lowest_sum";
-echo "<br> the highest value of all 3 numbers are from $highest_name with a value of $highest_sum";
-
-$max_values_per_person = [];
-
-foreach ($sum_per_person as $name => $values) {
-    $max_values_per_person[$name] =  max($values);
-}
-
-$person_with_highest = array_keys($max_values_per_person, max($max_values_per_person));
-$person_with_lowest = array_keys($max_values_per_person, min($max_values_per_person));
-
-echo "<br><br>The highest SINGLE value is from $person_with_highest with " . max($max_values_per_person);
